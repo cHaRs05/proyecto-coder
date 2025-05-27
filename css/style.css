@@ -1,228 +1,201 @@
-/* Estilos generales */
 body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
-    color: #333;
-    line-height: 1.6;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
 }
 
 header {
-    background-color: #007bff;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    margin-bottom: 20px;
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
-
 header h1 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Otra tipografía para el título principal */
-    font-size: 2.5em;
-    margin-bottom: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2.5em;
+  margin-bottom: 10px;
 }
-
 header p {
-    font-size: 1.1em;
-    margin-bottom: 20px;
+  font-size: 1.1em;
+  margin-bottom: 20px;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
-
 nav a {
-    color: black; /* Texto negro para los enlaces del menú */
-    text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease; /* Transición para el color del texto también */
+  color: black;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
-
 nav a:hover {
-    background-color: #0056b3;
-    color: white; /* Texto blanco al pasar el ratón */
+  background-color: #0056b3;
+  color: white;
 }
 
 main {
-    padding: 20px;
+  padding: 20px;
 }
 
 section {
-    background-color: white;
-    padding: 30px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  padding: 30px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
 section h2 {
-    font-family: 'Montserrat', sans-serif; /* Otra tipografía para los títulos de sección */
-    color: #28a745;
-    font-size: 2em;
-    margin-bottom: 15px;
-    border-bottom: 3px solid #28a745;
-    padding-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+  color: #28a745;
+  font-size: 2em;
+  margin-bottom: 15px;
+  border-bottom: 3px solid #28a745;
+  padding-bottom: 10px;
 }
-
 section h3 {
-    font-family: 'Roboto', sans-serif; /* Otra tipografía para los subtítulos */
-    color: #007bff;
-    font-size: 1.5em;
-    margin-top: 20px;
-    margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+  color: #007bff;
+  font-size: 1.5em;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
-/* Estilos para el catálogo */
 .servicio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 
 .servicio {
-    background-color: #e9ecef;
-    padding: 20px;
-    border-radius: 8px;
+  background-color: #e9ecef;
+  padding: 20px;
+  border-radius: 8px;
 }
-
 .servicio h3 {
-    color: #007bff;
-    margin-top: 0;
+  color: #007bff;
+  margin-top: 0;
+}
+.servicio .precio {
+  color: #dc3545;
+  font-weight: bold;
 }
 
-.precio {
-    color: #dc3545;
-    font-weight: bold;
-}
-
-/* Estilos para el formulario de contacto y reserva */
 form {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: grid;
-    gap: 15px;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: grid;
+  gap: 15px;
 }
-
 form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #555;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
 }
-
-form input[type="text"],
-form input[type="email"],
+form input[type=text],
+form input[type=email],
 form select,
 form textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-size: 1em;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1em;
 }
-
 form textarea {
-    resize: vertical;
+  resize: vertical;
+}
+form button {
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+form button[type=submit] {
+  background-color: #28a745;
+}
+form button[type=submit]:hover {
+  background-color: #1e7e34;
+}
+form button[type=reset] {
+  background-color: #6c757d;
+}
+form button[type=reset]:hover {
+  background-color: #545b62;
 }
 
-form button[type="submit"],
-form button[type="reset"] {
-    background-color: #28a745;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-    transition: background-color 0.3s ease;
-}
-
-form button[type="submit"]:hover {
-    background-color: #1e7e34;
-}
-
-form button[type="reset"] {
-    background-color: #6c757d;
-}
-
-form button[type="reset"]:hover {
-    background-color: #5a6268;
-}
-
-/* Estilos para la sección de información */
 #informacion ul {
-    list-style-type: disc;
-    margin-left: 20px;
-    margin-bottom: 15px;
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 15px;
 }
-
 #informacion li {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
-/* Estilos para el pie de página */
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #343a40;
-    color: white;
-    font-size: 0.9em;
-    margin-top: 30px;
+  text-align: center;
+  padding: 20px;
+  background-color: #343a40;
+  color: white;
+  font-size: 0.9em;
+  margin-top: 30px;
 }
 
-/* Estilos para la página de inicio */
 #introduccion {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: center;
 }
-
 #introduccion h2 {
-    grid-column: 1 / -1;
-    text-align: center;
+  grid-column: 1/-1;
+  text-align: center;
 }
-
 #introduccion > div {
-    padding: 20px;
+  padding: 20px;
 }
 
 #nuestra-intencion {
-    text-align: center;
-    padding: 40px;
-    background-color: #f0f8ff;
-    border-radius: 8px;
+  text-align: center;
+  padding: 40px;
+  background-color: #f0f8ff;
+  border-radius: 8px;
 }
-
 #nuestra-intencion h2 {
-    border-bottom-color: #007bff;
+  border-bottom-color: #007bff;
 }
 
-/* Media queries para hacerlo más responsivo */
 @media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    #introduccion {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    #introduccion > div {
-        padding: 15px;
-    }
-}
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  #introduccion {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  #introduccion > div {
+    padding: 15px;
+  }
+}/*# sourceMappingURL=style.css.map */
