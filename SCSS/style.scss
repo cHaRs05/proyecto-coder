@@ -1,6 +1,4 @@
-// SCSS/style.scss
 
-// Importación de fuentes (si las tienes en archivos separados)
 // @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&family=Segoe+UI&display=swap');
 
 // Variables de colores
@@ -190,7 +188,7 @@ form {
             background-color: $secondary-color;
 
             &:hover {
-                background-color: darken($secondary-color, 10%); // Usando una función de color de SASS
+                background-color: darken($secondary-color, 10%); 
             }
         }
 
@@ -255,7 +253,6 @@ footer {
     }
 }
 
-// Media queries para hacerlo más responsivo
 @media (max-width: 768px) {
     nav {
         ul {
