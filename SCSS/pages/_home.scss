@@ -1,0 +1,74 @@
+// scss/pages/_home.scss
+@use "../utils/variables" as var;
+
+.home-hero-section {
+    background-color: var.$color-white;
+    padding: var.$spacing-xxxl var.$spacing-md; // Gran padding para la sección hero
+    text-align: center;
+    border-radius: var.$border-radius-lg;
+    box-shadow: var.$shadow-medium; // Una sombra un poco más pronunciada
+    margin: var.$spacing-xxl auto; // Centrar el contenedor
+    max-width: 900px; // Ancho máximo para la sección
+    
+    @media (max-width: var.$breakpoint-md) {
+        padding: var.$spacing-xl var.$spacing-sm;
+        margin: var.$spacing-lg auto;
+    }
+
+    h1 {
+        color: var.$color-primary;
+        margin-bottom: var.$spacing-sm;
+    }
+
+    p {
+        font-size: var.$font-size-lg;
+        color: var.$color-gray-medium;
+        margin-bottom: var.$spacing-lg;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .btn {
+        margin-top: var.$spacing-md; // Espacio entre el texto y el botón
+    }
+}
+
+.home-about-section {
+    @extend .section-padding; // Extiende las propiedades de .section-padding
+    background-color: var.$color-gray-light;
+    text-align: center;
+
+    h2 {
+        color: var.$color-secondary;
+    }
+
+    p {
+        max-width: 900px;
+        margin: 0 auto var.$spacing-lg auto;
+    }
+
+    .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); // Responsive grid
+        gap: var.$spacing-lg;
+        margin-top: var.$spacing-xl;
+
+        .feature-item {
+            background-color: var.$color-white;
+            padding: var.$spacing-md;
+            border-radius: var.$border-radius-md;
+            box-shadow: var.$shadow-light;
+            text-align: center;
+
+            h3 {
+                color: var.$color-primary;
+                margin-top: var.$spacing-sm;
+            }
+
+            p {
+                font-size: var.$font-size-sm;
+            }
+        }
+    }
+}

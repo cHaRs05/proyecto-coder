@@ -1,0 +1,48 @@
+// scss/base/_typography.scss
+@use "../utils/variables" as var;
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var.$font-family-base;
+    color: var.$color-gray-dark;
+    line-height: var.$line-height-headings;
+    margin-bottom: var.$spacing-sm; // Margen inferior para todos los encabezados
+    font-weight: var.$font-weight-bold;
+}
+
+h1 {
+    font-size: var.$h1-font-size;
+    margin-bottom: var.$spacing-md;
+    @media (max-width: var.$breakpoint-md) {
+        font-size: var.$h2-font-size; // Reducir en tablets
+    }
+}
+
+h2 {
+    font-size: var.$h2-font-size;
+    margin-bottom: var.$spacing-md;
+    @media (max-width: var.$breakpoint-md) {
+        font-size: var.$h3-font-size;
+    }
+}
+
+h3 {
+    font-size: var.$h3-font-size;
+    margin-bottom: var.$spacing-sm;
+}
+
+p {
+    margin-bottom: var.$spacing-sm;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+strong {
+    font-weight: var.$font-weight-bold;
+}
+
+em {
+    font-style: italic;
+}
+
+// Puedes añadir más estilos de tipografía aquí si los necesitas

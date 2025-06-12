@@ -1,0 +1,45 @@
+// scss/layout/_footer.scss
+@use "../utils/variables" as var;
+@use "../utils/mixins" as mix;
+
+.footer {
+    background-color: var.$color-primary; // El mismo azul oscuro del header
+    color: var.$color-white;
+    padding: var.$spacing-md var.$spacing-lg;
+    text-align: center;
+    font-size: var.$font-size-sm;
+    border-top: 1px solid lighten(var.$color-primary, 5%); // Borde superior sutil
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var.$spacing-xs; // Espacio entre elementos del footer
+    }
+
+    a {
+        color: var.$color-white;
+        text-decoration: none;
+        &:hover {
+            color: var.$color-tertiary;
+        }
+    }
+
+    p {
+        margin-bottom: 0; // Remueve el margen inferior por defecto de los párrafos
+    }
+
+    // Puedes añadir iconos de redes sociales aquí
+    .social-links {
+        display: flex;
+        gap: var.$spacing-sm;
+        margin-top: var.$spacing-sm;
+
+        a {
+            font-size: var.$font-size-lg; // Para iconos grandes
+            &:hover {
+                transform: translateY(-2px); // Pequeña animación al pasar el ratón
+            }
+        }
+    }
+}

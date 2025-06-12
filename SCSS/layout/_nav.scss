@@ -1,0 +1,66 @@
+@use "../utils/variables" as var; 
+
+.main-nav {
+    flex-grow: 1;
+    text-align: center;
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        gap: var.$spacing-lg;
+
+        @media (max-width: var.$breakpoint-md) {
+            flex-direction: column;
+            gap: var.$spacing-sm;
+        }
+
+        // AGREGAMOS ESTO para asegurar que los enlaces dentro de UL sean blancos
+        // Esto aumenta la especificidad para que sobrescriba otras reglas
+        li a { 
+            color: var.$color-white; 
+            text-decoration: none; 
+            display: block;
+            padding: var.$spacing-xxs var.$spacing-sm;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: background-color var.$transition-speed-normal var.$transition-timing-ease-in-out,
+                        transform var.$transition-speed-fast var.$transition-timing-ease;
+        }
+    }
+
+    li {
+        margin-bottom: var.$spacing-xs;
+        @media (min-width: var.$breakpoint-md) {
+            margin-bottom: 0;
+        }
+    }
+
+    // Mantén el selector 'a' general para otras propiedades,
+    // pero el color ya lo hemos forzado con más especificidad arriba.
+    a {
+        display: block;
+        padding: var.$spacing-xxs var.$spacing-sm;
+        // color: var.$white-color; // Esta línea ya no es tan crítica aquí para el color,
+                                  // porque 'ul li a' tiene más especificidad.
+                                  // Puedes comentarla o borrarla si quieres,
+                                  // pero dejarla no causará problemas.
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: background-color var.$transition-speed-normal var.$transition-timing-ease-in-out,
+                    transform var.$transition-speed-fast var.$transition-timing-ease;
+    }
+}
+
+// Puedes añadir esto al final del archivo _nav.scss si no lo tienes ya,
+// para asegurarte de que los enlaces de contacto (email, Instagram) también sean blancos,
+// aunque por las imágenes, parece que ya lo son.
+// .header .contact-info a {
+//     color: var.$white-color;
+//     text-decoration: none;
+//     font-size: 0.9em;
+//     margin-left: var.$spacing-sm;
+// }
+

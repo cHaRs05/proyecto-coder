@@ -1,0 +1,33 @@
+// scss/componentes/_sections.scss
+@use "../utils/variables" as var; // Importa las variables correctas
+
+.sections {
+    padding: var.$spacing-xxl 0;
+    text-align: center;
+    background-color: var.$color-gray-light; // Usando la variable correcta
+
+    &.section-hero {
+        padding: var.$spacing-xxxl 0;
+        background-color: var.$color-primary; // Usando la variable correcta
+        color: var.$color-white; // Usando la variable correcta
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 400px;
+    }
+}
+
+.card {
+    background-color: var.$color-white; // Usando la variable correcta
+    padding: var.$spacing-lg;
+    border-radius: var.$border-radius-md;
+    box-shadow: var.$shadow-medium; // Usando la variable correcta
+    transition: transform var.$transition-speed-normal var.$transition-timing-ease,
+                box-shadow var.$transition-speed-normal var.$transition-timing-ease;
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: var.$shadow-strong; // Usando la variable correcta
+    }
+}

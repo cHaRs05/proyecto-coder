@@ -1,0 +1,56 @@
+// scss/componentes/_forms.scss
+@use "../utils/variables" as var;
+
+.forms { // Esta clase es la que se extiende en _reserva.scss
+    background-color: var.$color-white;
+    padding: var.$spacing-xl;
+    border-radius: var.$border-radius-md;
+    box-shadow: var.$shadow-medium;
+    display: flex;
+    flex-direction: column;
+    gap: var.$spacing-md;
+
+    @media (max-width: var.$breakpoint-md) {
+        padding: var.$spacing-lg;
+    }
+} // <-- Asegúrate de que esta llave cierra el bloque .forms
+
+.form { // Esta es una clase .form separada si la necesitas.
+        // Si no, podrías quitar este bloque o integrar sus estilos directamente en .forms
+        // o en los elementos anidados de .forms.
+    .form-group {
+        margin-bottom: var.$spacing-md;
+        label {
+            display: block;
+            margin-bottom: var.$spacing-xs;
+            font-weight: var.$font-weight-medium;
+            color: var.$color-gray-dark;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"],
+        input[type="tel"],
+        textarea,
+        select {
+            width: 100%;
+            padding: var.$spacing-sm;
+            border: 1px solid var.$color-border-light;
+            border-radius: var.$border-radius-sm;
+            font-size: var.$font-size-base;
+            color: var.$color-gray-dark;
+            transition: border-color var.$transition-speed-normal ease;
+
+            &:focus {
+                outline: none;
+                border-color: var.$color-secondary;
+                box-shadow: 0 0 0 2px rgba(var.$color-secondary, 0.2);
+            }
+        } // <-- Cierre del grupo de selectores de input/textarea/select
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+    } // <-- Cierre de .form-group
+    // ... otros estilos para .form si los tienes
+} // <-- Cierre de .form

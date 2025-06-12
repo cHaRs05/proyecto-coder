@@ -1,0 +1,37 @@
+// scss/pages/_informacion.scss
+@use "../utils/variables" as var;
+
+.informacion-page-content {
+    background-color: var.$color-white;
+    padding: var.$spacing-xl;
+    border-radius: var.$border-radius-lg;
+    box-shadow: var.$shadow-light;
+    margin: var.$spacing-xl auto;
+    max-width: 900px;
+    
+    @media (max-width: var.$breakpoint-md) {
+        padding: var.$spacing-lg;
+        margin: var.$spacing-lg auto;
+    }
+
+    h1 {
+        color: var.$color-primary;
+        text-align: center;
+        margin-bottom: var.$spacing-lg;
+    }
+
+    h2 {
+        color: var.$color-secondary;
+        margin-top: var.$spacing-lg;
+        margin-bottom: var.$spacing-sm;
+    }
+
+    ul {
+        list-style: disc;
+        margin-left: var.$spacing-lg;
+        margin-bottom: var.$spacing-md;
+        li {
+            margin-bottom: var.$spacing-xs;
+        }
+    }
+}

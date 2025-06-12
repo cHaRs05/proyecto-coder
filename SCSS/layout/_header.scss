@@ -1,0 +1,118 @@
+// scss/layout/_header.scss
+@use "../utils/variables" as var;
+@use "../utils/mixins" as mix;
+
+.header {
+    background-color: var.$color-primary;
+    color: var.$color-white;
+    padding: var.$spacing-md var.$spacing-lg;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: var.$shadow-light;
+
+    @media (max-width: var.$breakpoint-lg) {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: var.$spacing-md;
+    }
+
+    @media (max-width: var.$breakpoint-md) {
+        padding: var.$spacing-sm;
+    }
+}
+
+.logo {
+    font-family: var.$font-family-headings;
+    font-size: var.$h3-font-size;
+    font-weight: var.$font-weight-bold;
+    color: var.$color-white;
+    text-decoration: none;
+    margin-right: var.$spacing-lg;
+
+    @media (max-width: var.$breakpoint-lg) {
+        margin-right: 0;
+        margin-bottom: var.$spacing-sm;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.main-nav {
+    flex-grow: 1;
+    text-align: center;
+
+    @media (max-width: var.$breakpoint-lg) {
+        flex-basis: 100%;
+        order: 2;
+        margin-bottom: var.$spacing-sm;
+    }
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: var.$spacing-lg;
+
+    @media (max-width: var.$breakpoint-lg) {
+        flex-direction: column;
+        gap: var.$spacing-xs;
+    }
+}
+
+.main-nav a {
+    color: var.$color-white;
+    text-decoration: none;
+    font-size: var.$font-size-base;
+    font-weight: var.$font-weight-normal;
+    padding: var.$spacing-xs var.$spacing-sm;
+    border-radius: var.$border-radius-sm;
+    transition: color var.$transition-speed-normal var.$transition-timing-ease,
+                background-color var.$transition-speed-normal var.$transition-timing-ease;
+    
+    &:hover {
+        background-color: rgba(var.$color-white, 0.2);
+        color: var.$color-white;
+    }
+
+    &.active {
+        background-color: var.$color-secondary;
+        font-weight: var.$font-weight-bold;
+        color: var.$color-white;
+    }
+
+    @media (max-width: var.$breakpoint-md) {
+        padding: var.$spacing-xs;
+    }
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: var.$spacing-md;
+    font-size: var.$font-size-sm;
+    white-space: nowrap;
+
+    @media (max-width: var.$breakpoint-lg) {
+        flex-basis: 100%;
+        justify-content: center;
+        order: 1;
+        margin-bottom: var.$spacing-sm;
+    }
+
+    a {
+        color: var.$color-white;
+        text-decoration: none;
+        transition: color var.$transition-speed-fast var.$transition-timing-ease;
+
+        &:hover {
+            color: var.$color-tertiary; // Cambié a tertiary para un acento diferente
+        }
+    }
+}
