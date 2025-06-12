@@ -1,9 +1,9 @@
 // scss/pages/_contactanos.scss
 @use "../utils/variables" as var;
-@use "../components/forms" as forms;
+@use "../componentes/forms" as forms;
 
 .contactanos-page-content {
-    @extend .forms.form; // Extiende las propiedades base del formulario
+    @extend .forms, .form; // Extiende las propiedades base del formulario
     max-width: 800px;
     margin: var.$spacing-xl auto;
     
@@ -48,7 +48,7 @@
     }
 
     .btn-send-message {
-        @extend .btn-primary;
+        @extend .btn-primary !optional;
         width: 100%;
         margin-top: var.$spacing-md;
     }

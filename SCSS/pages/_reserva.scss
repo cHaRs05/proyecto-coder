@@ -27,7 +27,7 @@
     }
 
     .btn-submit {
-        @extend .btn-primary; // Asume que .btn-primary está correctamente definido en _buttons.scss
+        @extend .btn-primary !optional; // Asume que .btn-primary está correctamente definido en _buttons.scss
         width: 100%;
         margin-top: var.$spacing-md;
     }

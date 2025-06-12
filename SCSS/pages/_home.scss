@@ -35,7 +35,7 @@
 }
 
 .home-about-section {
-    @extend .section-padding; // Extiende las propiedades de .section-padding
+    @extend .section-padding !optional; // Extiende las propiedades de .section-padding
     background-color: var.$color-gray-light;
     text-align: center;
 

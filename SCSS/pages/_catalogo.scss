@@ -30,9 +30,13 @@
 }
 
 .producto-catalogo-card {
-    @extend sections.card; // Esto debería funcionar ahora.
+  @extend .sections !optional; // Extiende .sections de forma opcional
+  @extend .card;             // Extiende .card (no es necesario el !optional aquí a menos que quieras que .card sea opcional también)
+  text-align: center;
+  // ... otras propiedades CSS para .producto-catalogo-card
+}
 
-    text-align: center;
+
 
     .imagen-producto {
         width: 100%;
@@ -63,8 +67,7 @@
         }
     }
     .btn-comprar {
-        @extend btn.btn-primary;
+        @extend .btn, .btn-primary;
         width: calc(100% - (var.$spacing-md * 2));
         margin: 0 var.$spacing-md var.$spacing-md var.$spacing-md;
     }
-}
