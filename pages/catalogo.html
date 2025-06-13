@@ -1,70 +1,88 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Catálogo</title>
+
+  
   <link rel="stylesheet" href="../SCSS/main.css">
+
+  <!-- Tipografías -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Página de Catálogo</h1>
+
+  <header class="header">
+    <div class="logo">
+      <h1>Diamond Diseños</h1>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="informacion.html">Información</a></li>
+        <li><a href="catalogo.html" class="active">Catálogo</a></li>
+        <li><a href="reserva.html">Reserva</a></li>
+        <li><a href="contactanos.html">Contáctanos</a></li>
+      </ul>
+    </nav>
+    <div class="contact-info">
+            <a href="mailto:DiamonDisenos@gmail.com">📧 DiamonDisenos@gmail.com</a>
+            <a href="https://www.instagram.com/DiamonDisenos" target="_blank">📱 @DiamonDisenos</a>
+        </div>
   </header>
 
-  <nav>
-    <a href="../index.html">Inicio</a>
-    <a href="./informacion.html">Información</a>
-    <a href="./catalogo.html">Catálogo</a>
-    <a href="./reserva.html">Reserva</a>
-    <a href="./contactanos.html">Contáctanos</a>
-  </nav>
-
-  <main>
-    <p>Bienvenido a la sección del catálogo. Aquí puedes ver nuestros productos o servicios.</p>
-  </main>
-  <h1>Catálogo de Servicios</h1>
+  <main class="catalogo-page-content">
+    <h1>Catálogo de Servicios</h1>
 
     <h2>Diseño Web</h2>
-    <div>
+    <section class="catalogo-grid">
+      <div class="producto-catalogo-card">
         <h3>Diseño de Sitios Web Personalizados</h3>
-        <p>Creamos sitios web únicos y atractivos, adaptados a tus necesidades y objetivos. Incluye diseño visual, estructura de la información y optimización para diferentes dispositivos.</p>
-        <p>Precio: A convenir (depende de la complejidad del proyecto)</p>
-    </div>
+        <p>Creamos sitios web únicos y atractivos, adaptados a tus necesidades y objetivos...</p>
+        <p class="precio">Precio: A convenir</p>
+      </div>
 
-    <div>
+      <div class="producto-catalogo-card">
         <h3>Rediseño de Sitios Web Existentes</h3>
-        <p>Modernizamos y optimizamos tu sitio web actual para mejorar su apariencia, funcionalidad y experiencia de usuario.</p>
-        <p>Precio: A convenir (depende del estado actual del sitio)</p>
-    </div>
+        <p>Modernizamos y optimizamos tu sitio web actual...</p>
+        <p class="precio">Precio: A convenir</p>
+      </div>
 
-    <div>
+      <div class="producto-catalogo-card">
         <h3>Mantenimiento y Actualización Web</h3>
-        <p>Ofrecemos servicios de mantenimiento continuo para asegurar que tu sitio web esté siempre actualizado, seguro y funcionando correctamente.</p>
-        <p>Precio: Planes mensuales o por horas</p>
-    </div>
+        <p>Ofrecemos servicios de mantenimiento continuo...</p>
+        <p class="precio">Precio: Planes mensuales</p>
+      </div>
 
-    <h2>Edición de Video</h2>
-    <div>
+      <h2 style="grid-column: 1 / -1;">Edición de Video</h2>
+
+      <div class="producto-catalogo-card">
         <h3>Edición de Videos Promocionales</h3>
-        <p>Creamos videos atractivos y profesionales para promocionar tu negocio, productos o eventos.</p>
-        <p>Precio: A convenir (depende de la duración y complejidad)</p>
-    </div>
+        <p>Creamos videos atractivos y profesionales...</p>
+        <p class="precio">Precio: A convenir</p>
+      </div>
 
-    <div>
+      <div class="producto-catalogo-card">
         <h3>Edición de Videos para Redes Sociales</h3>
-        <p>Adaptamos tus videos para diferentes plataformas de redes sociales, optimizando el formato y el contenido para cada una.</p>
-        <p>Precio: Por video o paquete</p>
-    </div>
+        <p>Adaptamos tus videos para diferentes plataformas...</p>
+        <p class="precio">Precio: Por video o paquete</p>
+      </div>
 
-    <div>
+      <div class="producto-catalogo-card">
         <h3>Creación de Contenido de Video Corto</h3>
-        <p>Diseñamos y editamos videos cortos y dinámicos para captar la atención de tu audiencia en plataformas como TikTok, Instagram Reels y YouTube Shorts.</p>
-        <p>Precio: Por video o paquete</p>
-    </div>
+        <p>Diseñamos y editamos videos cortos y dinámicos...</p>
+        <p class="precio">Precio: Por video o paquete</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Diamond Diseños. Todos los derechos reservados.</p>
+  </footer>
 
 </body>
 </html>
-

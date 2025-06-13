@@ -1,4 +1,3 @@
-// scss/layout/_header.scss
 @use "../utils/variables" as var;
 @use "../utils/mixins" as mix;
 
@@ -112,7 +111,7 @@
         transition: color var.$transition-speed-fast var.$transition-timing-ease;
 
         &:hover {
-            color: var.$color-tertiary; // Cambié a tertiary para un acento diferente
-        }
+            color: var.$color-tertiary;
     }
+  }
 }

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -10,56 +11,70 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Página de Contacto</h1>
+
+  <header class="header">
+    <div class="logo">
+      <h1>Diamond Diseños</h1>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="informacion.html">Información</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="reserva.html">Reserva</a></li>
+        <li><a href="contactanos.html" class="active">Contáctanos</a></li>
+      </ul>
+    </nav>
+    <div class="contact-info">
+            <a href="mailto:DiamonDisenos@gmail.com">📧 DiamonDisenos@gmail.com</a>
+            <a href="https://www.instagram.com/DiamonDisenos" target="_blank">📱 @DiamonDisenos</a>
+        </div>
   </header>
 
-  <nav>
-    <a href="../index.html">Inicio</a>
-    <a href="./informacion.html">Información</a>
-    <a href="./catalogo.html">Catálogo</a>
-    <a href="./reserva.html">Reserva</a>
-    <a href="./contactanos.html">Contáctanos</a>
-  </nav>
-
-  <main>
-    <p>Puedes contactarnos por correo o redes sociales.</p>
-  </main>
-  <h1>¡Ponte en Contacto con Nosotros!</h1>
+  <main class="contacto-page-content">
+    <h1>¡Ponte en Contacto con Nosotros!</h1>
     <p>Estamos aquí para ayudarte con tus proyectos de diseño web y edición de video. ¡No dudes en comunicarte!</p>
 
     <h2>Información de Contacto</h2>
     <ul>
-        <li><strong>Email:</strong> <a href="mailto:DiamonDisenos@gmail.com">DiamonDisenos@gmail.com</a></li>
-        <li><strong>Instagram:</strong> <a href="https://www.instagram.com/DiamonDisenos/" target="_blank">@DiamonDiseños</a></li>
-        <li><strong>Formulario de Contacto:</strong></li>
-        <form action="mailto:DiamonDisenos@gmail.com" method="post" enctype="text/plain">
-            <div>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-            </div>
-            <br>
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <br>
-            <div>
-                <label for="asunto">Asunto:</label>
-                <input type="text" id="asunto" name="asunto">
-            </div>
-            <br>
-            <div>
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-            </div>
-            <br>
-            <button type="submit">Enviar Mensaje</button>
-            <button type="reset">Limpiar Formulario</button>
-        </form>
+      <li><strong>Email:</strong> <a href="mailto:DiamonDisenos@gmail.com">DiamonDisenos@gmail.com</a></li>
+      <li><strong>Instagram:</strong> <a href="https://www.instagram.com/DiamonDisenos/" target="_blank">@DiamonDiseños</a></li>
+      <li><strong>Formulario de Contacto:</strong></li>
     </ul>
 
+    <form action="mailto:DiamonDisenos@gmail.com" method="post" enctype="text/plain" class="formulario-contacto">
+      <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="asunto">Asunto:</label>
+        <input type="text" id="asunto" name="asunto">
+      </div>
+
+      <div class="form-group">
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+      </div>
+
+      <div class="form-buttons">
+        <button type="submit">Enviar Mensaje</button>
+        <button type="reset">Limpiar Formulario</button>
+      </div>
+    </form>
+
     <p>También puedes seguirnos en Instagram para ver nuestros últimos trabajos y novedades.</p>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Diamond Diseños. Todos los derechos reservados.</p>
+  </footer>
 
 </body>
 </html>

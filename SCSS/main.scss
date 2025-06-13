@@ -1,12 +1,8 @@
-// scss/main.scss
-
 // 1. Utilities (variables, mixins)
 @use "utils/variables" as var;
 @use "utils/mixins" as mix;
 
 // 2. Base (typography)
-// En tu estructura, tienes _typography.scss dentro de la carpeta base.
-// La forma correcta de usarlo es @use "base/typography";
 @use "base/typography";
 
 // 3. Layout (header, footer, main-content, nav)
@@ -20,14 +16,13 @@
 @use "componentes/forms";
 @use "componentes/sections";
 
-// 5. Pages (home, contact, catalog, reserva, etc.)
+// 5. Pages (home, contactanos, catalogo, reserva, etc.)
 @use "pages/home";
 @use "pages/reserva";
 @use "pages/catalogo";
 @use "pages/contactanos";
 @use "pages/informacion";
 
-// Puedes añadir estilos globales directamente aquí si es necesario
 body {
     font-family: var.$font-family-base;
     line-height: var.$line-height-base;

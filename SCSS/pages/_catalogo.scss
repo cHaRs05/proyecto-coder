@@ -1,8 +1,6 @@
-// scss/pages/_catalogo.scss
-
 @use "../utils/variables" as var;
-@use "../componentes/sections" as sections; // Ahora debe existir y contener .card
-@use "../componentes/buttons" as btn;     // Para usar btn.btn-primary
+@use "../componentes/sections" as sections; 
+@use "../componentes/buttons" as btn;     
 
 .catalogo-page-content {
     max-width: 1200px;
@@ -30,10 +28,9 @@
 }
 
 .producto-catalogo-card {
-  @extend .sections !optional; // Extiende .sections de forma opcional
-  @extend .card;             // Extiende .card (no es necesario el !optional aquí a menos que quieras que .card sea opcional también)
-  text-align: center;
-  // ... otras propiedades CSS para .producto-catalogo-card
+    @extend .sections !optional; 
+    @extend .card;             
+    text-align: center;
 }
 
 

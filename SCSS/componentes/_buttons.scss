@@ -1,6 +1,5 @@
-// scss/componentes/_buttons.scss
 @use "../utils/variables" as var;
-@use "../utils/mixins" as mix; // Asegúrate de que este archivo también los use si los necesitas.
+@use "../utils/mixins" as mix; 
 
 .btn {
     display: inline-block;
@@ -29,8 +28,8 @@
 
 .btn-primary {
     @extend .btn;
-    background-color: var.$color-primary; // Usando la variable estandarizada
-    color: var.$color-white; // Usando la variable estandarizada
+    background-color: var.$color-primary; 
+    color: var.$color-white; 
 
     &:hover {
         background-color: darken(var.$color-primary, 8%);
@@ -39,8 +38,8 @@
 
 .btn-secondary {
     @extend .btn;
-    background-color: var.$color-gray-light; // Usando la variable estandarizada
-    color: var.$color-gray-dark; // Usando la variable estandarizada
+    background-color: var.$color-gray-light; 
+    color: var.$color-gray-dark; 
     border: 1px solid var.$color-border-light;
 
     &:hover {

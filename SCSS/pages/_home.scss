@@ -1,14 +1,13 @@
-// scss/pages/_home.scss
 @use "../utils/variables" as var;
 
 .home-hero-section {
     background-color: var.$color-white;
-    padding: var.$spacing-xxxl var.$spacing-md; // Gran padding para la sección hero
+    padding: var.$spacing-xxxl var.$spacing-md; 
     text-align: center;
     border-radius: var.$border-radius-lg;
-    box-shadow: var.$shadow-medium; // Una sombra un poco más pronunciada
-    margin: var.$spacing-xxl auto; // Centrar el contenedor
-    max-width: 900px; // Ancho máximo para la sección
+    box-shadow: var.$shadow-medium; 
+    margin: var.$spacing-xxl auto; 
+    max-width: 900px; 
     
     @media (max-width: var.$breakpoint-md) {
         padding: var.$spacing-xl var.$spacing-sm;
@@ -30,12 +29,12 @@
     }
 
     .btn {
-        margin-top: var.$spacing-md; // Espacio entre el texto y el botón
+        margin-top: var.$spacing-md; 
     }
 }
 
 .home-about-section {
-    @extend .section-padding !optional; // Extiende las propiedades de .section-padding
+    @extend .section-padding !optional;
     background-color: var.$color-gray-light;
     text-align: center;
 
@@ -50,7 +49,7 @@
 
     .features-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); // Responsive grid
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
         gap: var.$spacing-lg;
         margin-top: var.$spacing-xl;
 

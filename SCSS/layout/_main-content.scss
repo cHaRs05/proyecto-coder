@@ -1,10 +1,9 @@
-// scss/layout/_main-content.scss
 @use "../utils/variables" as var;
 
 .main-content {
-    min-height: calc(100vh - (100px + 60px)); // Ajusta el 100px y 60px al alto de tu header y footer
-    padding: var.$spacing-xl 0; // Padding general para el contenido principal
-    background-color: var.$color-gray-light; // Fondo general del contenido
+    min-height: calc(100vh - (100px + 60px)); 
+    padding: var.$spacing-xl 0; 
+    background-color: var.$color-gray-light; 
     color: var.$color-gray-dark;
 
     @media (max-width: var.$breakpoint-md) {
@@ -12,5 +11,3 @@
     }
 }
 
-// Puedes añadir estilos para secciones específicas dentro del main aquí,
-// o usar las clases de `_sections.scss`

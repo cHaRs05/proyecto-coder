@@ -1,11 +1,8 @@
-// scss/pages/_reserva.scss
 @use "../utils/variables" as var;
-@use "../componentes/forms" as forms; // La carpeta es 'componentes' (en español)
+@use "../componentes/forms" as forms; 
 
 .reserva-page-content {
     @extend .form-group;
- // Esta es la sintaxis correcta para extender un selector de un módulo.
-
     max-width: 700px;
     margin: var.$spacing-xl auto;
 
@@ -27,7 +24,7 @@
     }
 
     .btn-submit {
-        @extend .btn-primary !optional; // Asume que .btn-primary está correctamente definido en _buttons.scss
+        @extend .btn-primary !optional; 
         width: 100%;
         margin-top: var.$spacing-md;
     }

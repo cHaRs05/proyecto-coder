@@ -1,7 +1,6 @@
-// scss/componentes/_forms.scss
 @use "../utils/variables" as var;
 
-.forms { // Esta clase es la que se extiende en _reserva.scss
+.forms {
     background-color: var.$color-white;
     padding: var.$spacing-xl;
     border-radius: var.$border-radius-md;
@@ -13,11 +12,10 @@
     @media (max-width: var.$breakpoint-md) {
         padding: var.$spacing-lg;
     }
-} // <-- Asegúrate de que esta llave cierra el bloque .forms
+} 
 
-.form { // Esta es una clase .form separada si la necesitas.
-        // Si no, podrías quitar este bloque o integrar sus estilos directamente en .forms
-        // o en los elementos anidados de .forms.
+.form { 
+        
     .form-group {
         margin-bottom: var.$spacing-md;
         label {
@@ -46,11 +44,11 @@
                 border-color: var.$color-secondary;
                 box-shadow: 0 0 0 2px rgba(var.$color-secondary, 0.2);
             }
-        } // <-- Cierre del grupo de selectores de input/textarea/select
+        } 
         textarea {
             resize: vertical;
             min-height: 100px;
         }
-    } // <-- Cierre de .form-group
-    // ... otros estilos para .form si los tienes
-} // <-- Cierre de .form
+    } 
+    
+} 

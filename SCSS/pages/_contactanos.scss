@@ -1,9 +1,8 @@
-// scss/pages/_contactanos.scss
 @use "../utils/variables" as var;
 @use "../componentes/forms" as forms;
 
 .contactanos-page-content {
-    @extend .forms, .form; // Extiende las propiedades base del formulario
+    @extend .forms, .form;
     max-width: 800px;
     margin: var.$spacing-xl auto;
     
@@ -30,7 +29,7 @@
             background-color: var.$color-gray-light;
             border-radius: var.$border-radius-md;
             
-            i { // Asumiendo iconos (Font Awesome, etc.)
+            i { 
                 font-size: var.$h3-font-size;
                 color: var.$color-secondary;
                 margin-bottom: var.$spacing-xs;

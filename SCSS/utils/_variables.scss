@@ -1,8 +1,6 @@
-/// scss/utils/_variables.scss
 
-// -----------------------------------------------------
 // 1. Colores
-// -----------------------------------------------------
+
 $color-primary: #1A3E6B;
 $color-secondary: #2D6B8D;
 $color-tertiary: #A7D9EE;
@@ -19,9 +17,8 @@ $color-warning: #ffc107;
 $color-danger: #dc3545;
 $color-info: #17a2b8;
 
-// -----------------------------------------------------
 // 2. Tipografía
-// -----------------------------------------------------
+
 $font-family-base: 'Montserrat', sans-serif;
 $font-family-headings: 'Raleway', sans-serif;
 
@@ -44,9 +41,8 @@ $font-weight-bold: 700;
 $line-height-base: 1.6;
 $line-height-headings: 1.2;
 
-// -----------------------------------------------------
 // 3. Espaciado
-// -----------------------------------------------------
+
 $spacing-xxs: 4px;
 $spacing-xs: 8px;
 $spacing-sm: 16px;
@@ -56,9 +52,8 @@ $spacing-xl: 48px;
 $spacing-xxl: 64px;
 $spacing-xxxl: 96px;
 
-// -----------------------------------------------------
 // 4. Bordes, Radios y Sombra
-// -----------------------------------------------------
+
 $border-radius-sm: 4px;
 $border-radius-md: 8px;
 $border-radius-lg: 12px;
@@ -68,18 +63,16 @@ $shadow-light: 0 2px 4px rgba(0, 0, 0, 0.1);
 $shadow-medium: 0 4px 8px rgba(0, 0, 0, 0.15);
 $shadow-strong: 0 8px 16px rgba(0, 0, 0, 0.2);
 
-// -----------------------------------------------------
 // 5. Transiciones
-// -----------------------------------------------------
+
 $transition-speed-fast: 0.15s;
 $transition-speed-normal: 0.3s;
 $transition-speed-slow: 0.5s;
 $transition-timing-ease: ease;
 $transition-timing-ease-in-out: ease-in-out;
 
-// -----------------------------------------------------
 // 6. Breakpoints
-// -----------------------------------------------------
+
 $breakpoint-xs: 480px;
 $breakpoint-sm: 576px;
 $breakpoint-md: 768px;
